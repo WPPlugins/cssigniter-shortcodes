@@ -1,0 +1,12 @@
+/* Separators
+=================================== */
+.cisc-separator {
+	margin: 30px 0;
+	height: 0;
+	border: 0;
+
+	/* Default Styles */
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: $primary-color;
+}

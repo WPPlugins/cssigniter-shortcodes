@@ -1,0 +1,36 @@
+/* Lists
+=================================== */
+.cisc-list {
+	margin: 0 0 15px;
+	font-size: 1.1em;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		ul {
+			margin: 0 0 0 10px;
+		}
+	}
+
+	li {
+		margin: 0 0 2px 0;
+		list-style: none;
+
+		&:before {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			margin-right: 0.4em;
+		}
+
+		i {
+			font-size: 0.85em;
+			margin: 0 3px 0 0;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+//== Grid system
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+$container-tablet: (720px + $grid-gutter-width) !default;
+$container-sm: $container-tablet !default;
+$container-desktop: (940px + $grid-gutter-width) !default;
+$container-md: $container-desktop !default;
+$container-large-desktop: (1140px + $grid-gutter-width) !default;
+$container-lg: $container-large-desktop !default;
+
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+//== Colors & Typography
+$primary-color: #47A8D8 !default;
+$text-color: #333 !default;
+
+$scheme-colors:
+	( blue #47A8D8,
+		red #d92832,
+		yellow #ffec70,
+		orange #ff8520,
+		purple #8c3eff,
+		pink #FF0060,
+		brown #614b1f,
+		green #57bf49,
+		gray #dadada,
+		white #f4f4f4,
+		black #111
+	);
+
+$primary-font: sans-serif;
+$secondary-font: serif;

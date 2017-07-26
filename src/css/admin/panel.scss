@@ -1,0 +1,69 @@
+.cisc-usage-table {
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	background: #FFF;
+	margin: 10px 0 0;
+
+	tr {
+		td:nth-child(3) {
+			width: 50%;
+		}
+	}
+
+	th, td {
+		text-align: left;
+		padding: 10px 15px;
+		background: #F9F9F9;
+	}
+
+	thead {
+		font-weight: bold;
+	}
+
+	h3 {
+		margin: 15px 0 0;
+	}
+
+	.description {
+		font-weight: normal;
+	}
+
+	td > ul {
+		code {
+			border: solid 1px #eeeac9;
+			background: #fffce6;
+			border-radius: 2px;
+		}
+
+		> li {
+			margin-bottom: 20px;
+
+			> ul {
+				margin-top: 7px;
+				padding-left: 5px;
+				color: #5E5E5E;
+
+				li {
+					margin: 0 0 2px;
+
+					&.info {
+						font-style: italic;
+						margin: -2px 0 5px 0;
+						font-size: 11px;
+						opacity: 0.95;
+					}
+				}
+			}
+		}
+	}
+
+	.cisc-code {
+		display:block;
+		color:#CFDBEC;
+		background-color:#2f2f2f;
+		border-radius: 2px;
+		padding:5px;
+		overflow:auto;
+		white-space: normal;
+	}
+}

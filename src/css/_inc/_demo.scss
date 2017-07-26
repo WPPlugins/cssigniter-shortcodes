@@ -1,0 +1,27 @@
+
+//== Demo Only
+.cisc-demo {
+	background: #fff4b8;
+	border: solid 1px #f1e6a7;
+	border-radius: 2px;
+	padding: 12px 70px 10px 15px;
+	color: #383733;
+	position: relative;
+	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.cisc-demo:after {
+	content: 'SAMPLE CODE';
+	font-size:11px;
+	background: #ff4200;
+	color: #fff;
+	padding: 5px;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+}

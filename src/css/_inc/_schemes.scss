@@ -1,0 +1,88 @@
+@each $scheme in $scheme-colors {
+	.cisc-shortcode-scheme-#{nth($scheme, 1)} {
+		@if lightness(nth($scheme, 2)) > 67% {
+			color: #333;
+		} @else {
+			color: #FFF;
+		}
+		background-color: nth($scheme, 2);
+
+		&.cisc-button {
+			> span {
+				@if lightness(nth($scheme, 2)) > 67% {
+					color: #333;
+				} @else {
+					color: #FFF;
+				}
+			}
+
+			&:hover {
+				> span {
+					@if lightness(nth($scheme, 2)) > 67% {
+						color: #333;
+					} @else {
+						color: #FFF;
+					}
+				}
+			}
+		}
+
+		&.cisc-box,
+		.cisc-tabs-wrap,
+		.cisc-accordion-panel-content {
+			border-color: nth($scheme, 2);
+		}
+
+		.cisc-tabs-nav li a,
+		.cisc-accordion-panel-title a {
+			color: nth($scheme, 2);
+
+			&.cisc-active,
+			&:hover {
+				background-color: nth($scheme, 2);
+
+				@if lightness(nth($scheme, 2)) > 67% {
+					color: #333;
+				} @else {
+					color: #FFF;
+				}
+			}
+		}
+
+		&.cisc-separator {
+			border-bottom-color: nth($scheme, 2);
+		}
+
+		&.cisc-list {
+			li:before {
+				color: nth($scheme, 2);
+			}
+		}
+
+		&.cisc-slider {
+			border-color: nth($scheme, 2);
+		}
+
+		.cisc-flex-control-paging li a.cisc-flex-active {
+			background: nth($scheme, 2);
+		}
+	}
+}
+
+div[class*="cisc-shortcode-scheme"].cisc-tabs,
+div[class*="cisc-shortcode-scheme"].cisc-accordion,
+div[class*="cisc-shortcode-scheme"].cisc-list {
+	background: none;
+	border: none;
+	color: inherit;
+}
+
+div[class*="cisc-shortcode-scheme"].cisc-slider,
+hr[class*="cisc-shortcode-scheme"].cisc-separator {
+	background: none;
+	color: inherit;
+}
+
+[class*="cisc-shortcode-scheme"].cisc-heading {
+	padding: 0.2em 0.6em;
+}

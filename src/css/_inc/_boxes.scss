@@ -1,0 +1,29 @@
+/* Boxes
+=================================== */
+.cisc-box {
+	@include clearfix();
+	padding: 20px;
+	border: 2px solid $primary-color;
+	margin: 0 0 30px;
+	font-family: inherit;
+	text-shadow: none;
+
+	> i {
+		line-height: normal;
+		float: left;
+		margin: 4px 20px 0 0;
+		font-size: 18px;
+	}
+}
+
+.cisc-box-content {
+	overflow: hidden;
+
+	*:first-child {
+		margin-top: 0;
+	}
+
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
